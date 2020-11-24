@@ -1,13 +1,7 @@
 language: node_js
-dist: xenial
-os: linux
 node_js:
-  - 'node'
-install:
-  - yarn
-cache: yarn
-script: 
-  - yarn build
-  - yarn test:unit
-after_success:
-  - codecov -f tests/unit/coverage/*.json
+ - "node"
+
+cache: npm
+
+script: npm run build
