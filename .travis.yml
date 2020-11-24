@@ -1,8 +1,6 @@
 language: node_js
-matrix:
-  include:
-    - dist: bionic
-    - dist: xenial
+dist: xenial
+os: linux
 node_js:
   - '14'
 install:
