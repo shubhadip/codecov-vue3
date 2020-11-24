@@ -3,12 +3,12 @@ sudo: false
 node_js:
   - '14'
 install:
-  - npm install
+  - yarn
 cache:
   directories:
     - node_modules
 script: 
-  - npm run build
-  - npm run test:unit
+  - yarn build
+  - yarn test:unit
 after_success:
   - codecov -f tests/unit/coverage/*.json
