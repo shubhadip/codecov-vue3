@@ -2,12 +2,10 @@ language: node_js
 dist: xenial
 os: linux
 node_js:
-  - '14'
+  - 'node'
 install:
   - yarn
-cache:
-  directories:
-    - node_modules
+cache: yarn
 script: 
   - yarn build
   - yarn test:unit
